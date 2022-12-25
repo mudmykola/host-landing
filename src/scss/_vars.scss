@@ -1,0 +1,60 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Poppins", sans-serif;
+  --content-width: 1138px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // colors
+  --light-color: #fff;
+  //transition
+  --h-tr: all 0.5s ease;
+  --d-tr: all 0.3s ease;
+}
+
+// fonts
+%pop-r {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+%pop-m {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+%pop-sb {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+%pop-b {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+%int-r {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+%int-eb {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+//color
+$c100: #b00000;
+$c200: #2e2e2e;
+$c300: #808080;
+$c400: #ffe87a;
+$c500: #D6D4D4;
+$default: #fff;
+
+// transition
+%dtrans {
+  transition: var(--d-tr);
+}
+%htrans {
+  transition: var(--h-tr);
+}

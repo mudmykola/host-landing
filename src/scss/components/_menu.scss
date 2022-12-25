@@ -1,0 +1,153 @@
+.menu {
+  padding: 41px 0 80px;
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__service {
+      position: relative;
+      margin: 0 100px 0 65px;
+      border: none;
+      background-color: inherit;
+      @extend %pop-sb;
+      font-size: 15px;
+      line-height: 20px;
+      cursor: pointer;
+    }
+    &__service::after {
+      content: "";
+      position: absolute;
+      @extend %dtrans;
+      width: 0;
+      left: 10%;
+      height: 2px;
+      background: $c100;
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      bottom: -30%;
+    }
+    &__service:hover::after {
+      width: 80%;
+      @extend %htrans;
+    }
+
+    &__menu {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        li {
+          position: relative;
+          a {
+            font-size: 15px;
+            line-height: 20px;
+            @extend %pop-sb;
+            color: $c200;
+          }
+        }
+        li:after {
+          content: "";
+          position: absolute;
+          @extend %dtrans;
+          width: 0;
+          left: 10%;
+          height: 2px;
+          background: $c100;
+          display: flex;
+          justify-content: center;
+          border-radius: 10px;
+          bottom: -30%;
+        }
+        li:hover::after {
+          width: 80%;
+          @extend %htrans;
+        }
+      }
+    }
+    &__account {
+      position: relative;
+      border: none;
+      background-color: inherit;
+      @extend %pop-sb;
+      font-size: 15px;
+      line-height: 20px;
+      margin-left: 198px;
+      cursor: pointer;
+    }
+    &__account::after {
+      content: "";
+      position: absolute;
+      @extend %dtrans;
+      width: 0;
+      left: 10%;
+      height: 2px;
+      background: $c100;
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      bottom: -30%;
+    }
+    &__account:hover::after {
+      width: 80%;
+      @extend %htrans;
+    }
+    &__el {
+      margin: 0 30px;
+      color: #dad8d8;
+      @extend %pop-r;
+    }
+    &__phone {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 6px;
+      }
+      a {
+        font-size: 16px;
+        line-height: 20px;
+        @extend %pop-sb;
+        color: $c200;
+        @extend %dtrans;
+      }
+      a:hover {
+        color: $c100;
+        @extend %htrans;
+      }
+    }
+  }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+  .menu {
+    padding: 15px 0;
+    &-inner {
+      justify-content: space-between;
+      &__service,
+      &__menu,
+      &__account,
+      &__el,
+      &__phone {
+        display: none;
+      }
+      &__logo {
+        img {
+          width: 75px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.header {
+  &-cont {
+    display: flex;
+    align-items: center0 0;
+    &__text {
+      width: 606px;
+      margin-right: 55px;
+    }
+    &__tab {
+      position: relative;
+
+      button {
+        position: relative;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 20px;
+        color: $c500;
+        opacity: 0.8;
+        @extend %pop-sb;
+        border: none;
+        background-color: transparent;
+        @extend %dtrans;
+      }
+      button.active {
+        color: $c100;
+        @extend %dtrans;
+      }
+      button.active:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 65%;
+        right: 20%;
+        bottom: -18%;
+        z-index: 9999;
+        border: 1px solid $c100;
+        border-radius: 8px;
+        @extend %htrans;
+      }
+    }
+    &__tab:after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      left: 0;
+      bottom: -20%;
+      border: 1px solid $c500;
+      z-index: -1;
+    }
+    &__link {
+      gap: 24px;
+      display: flex;
+      button {
+        padding: 12px;
+        border-radius: 8px;
+
+        font-size: 14px;
+        line-height: 20px;
+
+        @extend %pop-r;
+      }
+    }
+    &__img {
+      position: relative;
+      span {
+        position: absolute;
+        position: absolute;
+        content: "";
+
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid $c100;
+        right: -4%;
+        top: 10%;
+        transform: rotate(45deg);
+        animation: element1 5s ease-out 0s 1 normal forwards;
+        @keyframes element1 {
+          0% {
+            opacity: 0;
+            transform: translateY(-250px) rotate(-200deg);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateY(0) rotate(45deg);
+          }
+        }
+      }
+    }
+    &__img::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+      border-left: 50px solid $c100;
+      right: -8%;
+      bottom: 3%;
+      transform: rotate(45deg);
+      animation: element2 5s ease-out 0s 1 normal forwards;
+      @keyframes element2 {
+        0% {
+          opacity: 0;
+          transform: translateX(-250px) rotate(360deg);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0) rotate(45deg);
+        }
+      }
+    }
+    &__img::before {
+      position: absolute;
+      content: "";
+
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 25px solid $c100;
+      left: -4%;
+      bottom: 30%;
+      transform: rotate(135deg);
+      animation: element3 5s ease-out 0s 1 normal forwards;
+      @keyframes element3 {
+        0% {
+          opacity: 0;
+          transform: translateY(-250px) rotate(-200deg);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0) rotate(135deg);
+        }
+      }
+    }
+    &__info {
+      display: none;
+      @extend %dtrans;
+      height: 350px;
+    }
+    &__info.active {
+      display: block;
+      @extend %htrans;
+      animation: shutter-in-left 1s ease-in 0s 1 normal none;
+      @keyframes shutter-in-left {
+        0% {
+          transform: rotateY(100deg);
+          transform-origin: left;
+          opacity: 0;
+        }
+        100% {
+          transform: rotateY(0);
+          transform-origin: left;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  h1 {
+    margin: 0;
+    padding-top: 26px;
+    font-size: 64px;
+    line-height: 70px;
+    @extend %pop-b;
+    color: $c200;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    @extend %int-r;
+    color: $c300;
+    padding: 34px 0 64px;
+  }
+
+  &-btn {
+    &__create {
+      background-color: $c100;
+      color: $default;
+      border: 1px solid $c100;
+      @extend %dtrans;
+      cursor: pointer;
+      &:hover {
+        background-color: $default;
+        border: 1px solid $c200;
+        color: $c200;
+        @extend %htrans;
+      }
+    }
+    &__plan {
+      background-color: $default;
+      color: $c200;
+      border: 1px solid $c200;
+      cursor: pointer;
+      &:hover {
+        background-color: $c100;
+        border: 1px solid $default;
+        color: $default;
+        @extend %htrans;
+      }
+    }
+  }
+}
+
+// 768
+@media (max-width: 768px) {
+}
+
+// 600
+@media (max-width: 600px) {
+}
+
+// 480
+@media (max-width: 480px) {
+}
+
+// 320
+@media (max-width: 320px) {
+}

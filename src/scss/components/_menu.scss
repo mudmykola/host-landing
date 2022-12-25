@@ -118,16 +118,129 @@
   }
 }
 
+// 1024
+@media screen and (max-width: 1024px) {
+  .menu {
+    &-inner {
+      // display: -webkit-box;
+
+      &__menu {
+      }
+      &__service {
+        margin: 0 50px 0 50px;
+      }
+      &__account {
+        margin-left: 45px;
+      }
+      &__phone {
+      }
+    }
+  }
+}
+// 800
+@media screen and (max-width: 800px) {
+  .menu {
+    &-inner {
+      display: -webkit-box;
+      &__menu {
+        ul {
+          li {
+            a {
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+      &__service {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0 15px 0 25px;
+      }
+      &__account {
+        margin-left: 45px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      &__phone {
+        img {
+          width: 20px;
+        }
+        a {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      &__logo {
+        width: 50px;
+      }
+    }
+  }
+}
 // 768
 @media (max-width: 768px) {
+  .menu {
+    padding: 15px 0;
+    &-inner {
+      justify-content: space-between;
+      &__service,
+      &__menu,
+      &__account,
+      &__el,
+      &__phone {
+        display: none;
+      }
+      &__logo {
+        img {
+          width: 75px;
+        }
+      }
+    }
+  }
 }
 
 // 600
 @media (max-width: 600px) {
+  .menu {
+    padding: 15px 0;
+    &-inner {
+      justify-content: space-between;
+      &__service,
+      &__menu,
+      &__account,
+      &__el,
+      &__phone {
+        display: none;
+      }
+      &__logo {
+        img {
+          width: 75px;
+        }
+      }
+    }
+  }
 }
 
 // 480
 @media (max-width: 480px) {
+  .menu {
+    padding: 15px 0;
+    &-inner {
+      justify-content: space-between;
+      &__service,
+      &__menu,
+      &__account,
+      &__el,
+      &__phone {
+        display: none;
+      }
+      &__logo {
+        img {
+          width: 75px;
+        }
+      }
+    }
+  }
 }
 
 // 320

@@ -1,0 +1,46 @@
+.whyus {
+  margin-top: 45px;
+  &-inner {
+    ul {
+      gap: 60px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      li {
+        text-align: center;
+      }
+    }
+    &__box {
+      h2 {
+        font-size: 18px;
+        line-height: 25px;
+        @extend %pop-b;
+        margin: 17px 0 4px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 18px;
+        @extend %pop-r;
+      }
+    }
+  }
+}
+
+// 800
+@media screen and (max-width: 800px) {
+}
+
+// 768
+@media screen and (max-width: 768px) {
+}
+
+// 600
+@media screen and (max-width: 600px) {
+}
+
+// 480
+@media screen and (max-width: 480px) {
+}
+
+// 320
+@media screen and (max-width: 320px) {
+}

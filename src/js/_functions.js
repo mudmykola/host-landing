@@ -59,9 +59,7 @@ console.log(mobileCheck());
 // Подключение анимаций по скроллу
 import AOS from "aos";
 AOS.init({
-  useClassNames: true,
-  initClassName: false,
-  animatedClassName: "animated",
+  duration: 1000,
 });
 
 // Подключение параллакса блоков при скролле

@@ -1,0 +1,120 @@
+.pricing {
+  margin-top: 133px;
+  &-inner {
+    &__title {
+      text-align: center;
+      width: 650px;
+      margin: 0 auto;
+      h2 {
+        font-size: 50px;
+        line-height: 55px;
+        @extend %pop-sb;
+        margin-bottom: 38px;
+      }
+      p {
+        font-size: 25px;
+        line-height: 30px;
+        @extend %pop-r;
+        margin-bottom: 50px;
+      }
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      line-height: 30px;
+      @extend %pop-r;
+      p {
+        margin: 0;
+        @extend %pop-r;
+      }
+      h3 {
+        @extend %pop-r;
+      }
+      span {
+        font-size: 10px;
+        line-height: 15px;
+        @extend %pop-m;
+        background: $c400;
+        border-radius: 8px;
+        padding: 7px 8px;
+        margin-left: 25px;
+      }
+    }
+    &__switch {
+      position: relative;
+      display: inline-block;
+      width: 93px;
+      height: 50px;
+      margin-right: 21px;
+      input {
+        display: none;
+      }
+      span {
+        margin: 0;
+      }
+    }
+    &__switch input:checked + &__slider {
+      background-color: $c400;
+    }
+    &__switch input:focus + &__slider {
+      box-shadow: 0 0 1px $c400;
+    }
+    &__switch input:checked + &__slider::before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    &__slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 16%;
+      right: 0;
+      bottom: 0;
+      background-color: $c100;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 30px;
+        left: 12px;
+        bottom: 10px;
+        background-color: $default;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+    }
+    &__slider.round {
+      border-radius: 34px;
+      background: $c100;
+
+      &::before {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+// 800
+@media screen and (max-width: 800px) {
+}
+
+// 768
+@media screen and (max-width: 768px) {
+}
+
+// 600
+@media screen and (max-width: 600px) {
+}
+
+// 480
+@media screen and (max-width: 480px) {
+}
+
+// 320
+@media screen and (max-width: 320px) {
+}

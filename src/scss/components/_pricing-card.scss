@@ -1,0 +1,98 @@
+.card {
+  margin-top: 85px;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    gap: 100px;
+    li {
+      width: 299px;
+      background: $default;
+      border: 1.5px solid $c700;
+      box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      cursor: pointer;
+      @extend %dtrans;
+      &:hover {
+        @extend %border-ef;
+        background: $c400;
+        @extend %htrans;
+      }
+    }
+  }
+  &-title {
+    padding: 34px 29px 35px 34px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 28px;
+      line-height: 35px;
+      @extend %pop-sb;
+      margin-bottom: 11px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 20px;
+      @extend %pop-r;
+      margin-bottom: 28px;
+    }
+    strong {
+      font-size: 42px;
+      line-height: 50px;
+      @extend %pop-sb;
+      margin-bottom: 11px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 20px;
+      @extend %pop-r;
+      margin-bottom: 35px;
+    }
+    button {
+      font-size: 14px;
+      line-height: 20px;
+      @extend %pop-sb;
+      border: 2px solid $c200;
+      border-radius: 12px;
+      background: transparent;
+      padding: 9px 56px;
+      cursor: pointer;
+      @extend %dtrans;
+      &:hover {
+        background: $c100;
+        color: $default;
+        @extend %htrans;
+        // border: $c100;
+      }
+    }
+  }
+  &-list {
+    padding: 0 60px 48px 35px;
+
+    p {
+      position: relative;
+      font-size: 16px;
+      line-height: 20px;
+      @extend %int-eb;
+      color: $c300;
+      margin-left: 24px;
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url("/img/svg/check-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        left: -15%;
+        top: -15%;
+      }
+    }
+
+    p + p {
+      margin-top: 15px;
+    }
+  }
+}

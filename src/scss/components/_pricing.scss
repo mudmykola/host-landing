@@ -97,8 +97,54 @@
         border-radius: 50%;
       }
     }
+    &__sale {
+      position: relative;
+      text-align: center;
+      margin-top: 70px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: flex;
+
+        width: 856px;
+        height: 2px;
+        background: #c4c4c4;
+
+        bottom: -35%;
+        right: 13%;
+      }
+      button {
+        position: relative;
+        font-size: 30px;
+        line-height: 35px;
+        @extend %pop-sb;
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        background: transparent;
+        &::after {
+          content: "";
+          position: absolute;
+          display: none;
+          border: 2px solid $c100;
+          width: 60%;
+          right: 25%;
+          bottom: -35%;
+          z-index: 1;
+          border-radius: 2px;
+        }
+        &.active::after {
+          // width: 60%;
+          display: block;
+        }
+      }
+      button + button {
+        margin-left: 332px;
+      }
+    }
   }
 }
+
 // 800
 @media screen and (max-width: 800px) {
 }

@@ -147,20 +147,316 @@
 
 // 800
 @media screen and (max-width: 800px) {
+  .pricing {
+    margin-top: 50px;
+    &-inner {
+      &__title {
+        width: 750px;
+      }
+      &__btn {
+        width: 750px;
+      }
+      &__switch {
+        margin-right: 12px;
+        height: 40px;
+      }
+      &__slider {
+        &::before {
+          width: 25px;
+          height: 25px;
+          left: 9px;
+          bottom: 7px;
+        }
+      }
+      &__sale {
+        width: 750px;
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+          width: 750px;
+          right: 0;
+          bottom: -38%;
+        }
+        button {
+          &::after {
+            width: 350px;
+            left: 1%;
+            bottom: -42%;
+          }
+        }
+        button + button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 // 768
 @media screen and (max-width: 768px) {
+  .pricing {
+    margin-top: 50px;
+    &-inner {
+      &__title {
+        width: 700px;
+        h2 {
+          font-size: 40px;
+          line-height: 45px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      &__btn {
+        width: 700px;
+        p,
+        h3 {
+          font-size: 20px;
+          line-height: 25px;
+        }
+        span {
+          margin-left: 10px;
+          padding: 10px 20px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      &__switch {
+        margin-right: 12px;
+        height: 40px;
+      }
+      &__slider {
+        &::before {
+          width: 25px;
+          height: 25px;
+          left: 9px;
+          bottom: 7px;
+        }
+      }
+      &__sale {
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+          width: 700px;
+          right: 0;
+          bottom: -38%;
+        }
+        button {
+          &::after {
+            width: 350px;
+            left: 1%;
+            bottom: -42%;
+          }
+        }
+        button + button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 // 600
 @media screen and (max-width: 600px) {
+  .pricing {
+    margin-top: 50px;
+    &-inner {
+      &__title {
+        width: 450px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      &__btn {
+        width: 450px;
+        p,
+        h3 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        span {
+          margin-left: 6px;
+          padding: 10px 7px;
+          font-size: 9px;
+          line-height: 12px;
+        }
+      }
+      &__switch {
+        margin-right: 12px;
+        height: 40px;
+      }
+      &__slider {
+        &::before {
+          width: 25px;
+          height: 25px;
+          left: 9px;
+          bottom: 7px;
+        }
+      }
+      &__sale {
+        width: 550px;
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+          width: 550px;
+          right: 0;
+          bottom: -38%;
+        }
+        button {
+          &::after {
+            width: 200px;
+            left: 1%;
+            bottom: -42%;
+          }
+        }
+        button + button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 // 480
 @media screen and (max-width: 480px) {
+  .pricing {
+    margin-top: 50px;
+    &-inner {
+      &__title {
+        width: 450px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      &__btn {
+        width: 450px;
+        p,
+        h3 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        span {
+          margin-left: 6px;
+          padding: 10px 7px;
+          font-size: 9px;
+          line-height: 12px;
+        }
+      }
+      &__switch {
+        margin-right: 12px;
+        height: 40px;
+      }
+      &__slider {
+        &::before {
+          width: 25px;
+          height: 25px;
+          left: 9px;
+          bottom: 7px;
+        }
+      }
+      &__sale {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+          width: 450px;
+          right: 0;
+          bottom: -38%;
+        }
+        button {
+          &::after {
+            width: 200px;
+            left: 1%;
+            bottom: -42%;
+          }
+        }
+        button + button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 // 320
 @media screen and (max-width: 320px) {
+  .pricing {
+    margin-top: 50px;
+    &-inner {
+      &__title {
+        width: 290px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      &__btn {
+        width: 290px;
+        p,
+        h3 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        span {
+          margin-left: 6px;
+          padding: 10px 7px;
+          font-size: 9px;
+          line-height: 12px;
+        }
+      }
+      &__switch {
+        margin-right: 12px;
+        height: 40px;
+      }
+      &__slider {
+        &::before {
+          width: 25px;
+          height: 25px;
+          left: 9px;
+          bottom: 7px;
+        }
+      }
+      &__sale {
+        width: 290px;
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+          width: 290px;
+          right: 0;
+          bottom: -38%;
+        }
+        button {
+          &::after {
+            width: 100%;
+            right: 0;
+            bottom: -40%;
+          }
+        }
+        button + button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }

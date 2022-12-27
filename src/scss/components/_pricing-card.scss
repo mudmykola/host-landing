@@ -99,20 +99,94 @@
 
 // 800
 @media screen and (max-width: 800px) {
+  .card {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+
+      li {
+        margin: 0 auto;
+      }
+    }
+    &-title {
+      button {
+        padding: 9px 50px;
+      }
+    }
+  }
 }
 
 // 768
 @media screen and (max-width: 768px) {
+  .card {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+
+      li {
+        margin: 0 auto;
+      }
+    }
+    &-title {
+      button {
+        padding: 9px 50px;
+      }
+    }
+  }
 }
 
 // 600
 @media screen and (max-width: 600px) {
+  .card {
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+
+      li {
+        margin: 0 auto;
+      }
+    }
+    &-title {
+      button {
+        padding: 9px 50px;
+      }
+    }
+  }
 }
 
 // 480
 @media screen and (max-width: 480px) {
+  .card {
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+
+      li {
+        margin: 0 auto;
+      }
+    }
+    &-title {
+      button {
+        padding: 9px 50px;
+      }
+    }
+  }
 }
 
 // 320
 @media screen and (max-width: 320px) {
+  .card {
+    ul {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+      li {
+        width: 290px;
+      }
+    }
+    &-title {
+      button {
+        padding: 9px 50px;
+      }
+    }
+  }
 }

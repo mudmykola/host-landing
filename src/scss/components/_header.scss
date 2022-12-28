@@ -64,9 +64,7 @@
       position: relative;
       span {
         position: absolute;
-        position: absolute;
         content: "";
-
         width: 0;
         height: 0;
         border-top: 25px solid transparent;
@@ -116,7 +114,6 @@
     &__img::before {
       position: absolute;
       content: "";
-
       width: 0;
       height: 0;
       border-top: 25px solid transparent;

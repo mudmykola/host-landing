@@ -163,6 +163,41 @@
       width: 350px;
     }
   }
+  &-brand {
+    margin-top: 108px;
+    display: flex;
+    justify-content: space-between;
+    &__text {
+      width: 445px;
+      h2 {
+        font-size: 48px;
+        line-height: 52px;
+        @extend %int-eb;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 25px;
+        @extend %int-r;
+      }
+    }
+    &__img {
+      ul {
+        gap: 45px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        li {
+          img {
+            transition: 1s;
+            display: block;
+          }
+          img:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
 }
 // 800
 @media screen and (max-width: 800px) {

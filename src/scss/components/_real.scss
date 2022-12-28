@@ -1,0 +1,185 @@
+.real {
+  margin-top: 161px;
+  &-inner {
+    display: flex;
+    justify-content: center;
+  }
+  &-text {
+    width: 405px;
+    &__title {
+      position: relative;
+      width: 445px;
+      h2 {
+        font-size: 48px;
+        line-height: 52px;
+        color: $c200;
+        @extend %int-eb;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 20px;
+        @extend %int-r;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url("/img/real-ef-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 142px;
+        height: 120px;
+        display: block;
+        top: -50%;
+        left: -20%;
+        z-index: -1;
+        opacity: 0.3;
+        @extend %dtrans;
+      }
+    }
+    &__card {
+      width: 350px;
+      margin-top: 24px;
+      margin-left: 53px;
+      ul {
+        li {
+          cursor: pointer;
+          background: $default;
+          box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+          border-radius: 8px;
+          padding: 7px 32px 96px;
+          width: 350px;
+          @extend %dtrans;
+          p {
+            position: relative;
+            width: 254px;
+            font-size: 16px;
+            line-height: 20px;
+            @extend %int-r;
+            margin-bottom: 24px;
+          }
+          p:after {
+            content: "";
+            position: absolute;
+            display: block;
+            background-image: url("/img/real-ef-2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 15px;
+            height: 14px;
+            top: -2%;
+            left: -8%;
+            opacity: 0.3;
+          }
+          h2 {
+            font-size: 18px;
+            line-height: 22px;
+            @extend %int-eb;
+            margin-bottom: 5px;
+          }
+          span {
+            font-size: 14px;
+            line-height: 20px;
+            @extend %int-r;
+            color: #969bab;
+          }
+        }
+        li:hover {
+          @extend %border-ef;
+          @extend %htrans;
+          p:after {
+            opacity: 1;
+            @extend %htrans;
+          }
+        }
+      }
+    }
+  }
+  &-card {
+    margin-left: 30px;
+    ul {
+      li {
+        cursor: pointer;
+        background: $default;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+        border-radius: 8px;
+        padding: 39px 32px 14px;
+
+        @extend %dtrans;
+        p {
+          position: relative;
+          width: 254px;
+          font-size: 16px;
+          line-height: 20px;
+          @extend %int-r;
+          margin: 15px 0 24px;
+        }
+        p:after {
+          content: "";
+          position: absolute;
+          display: block;
+          background-image: url("/img/real-ef-2.webp");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          width: 15px;
+          height: 14px;
+          top: -2%;
+          left: -8%;
+          opacity: 0.3;
+          @extend %dtrans;
+        }
+        h2 {
+          font-size: 18px;
+          line-height: 22px;
+          @extend %int-eb;
+          margin-bottom: 5px;
+        }
+        span {
+          font-size: 14px;
+          line-height: 20px;
+          @extend %int-r;
+          color: #969bab;
+        }
+      }
+      li:hover {
+        @extend %border-ef;
+        @extend %htrans;
+        p:after {
+          opacity: 1;
+        }
+      }
+      li + li {
+        margin-top: 32px;
+      }
+    }
+
+    &__jpnl {
+      width: 445px;
+    }
+    &__leeve {
+      width: 350px;
+    }
+  }
+}
+// 800
+@media screen and (max-width: 800px) {
+}
+
+// 768
+@media screen and (max-width: 768px) {
+}
+
+// 600
+@media screen and (max-width: 600px) {
+}
+
+// 480
+@media screen and (max-width: 480px) {
+}
+
+// 320
+@media screen and (max-width: 320px) {
+}

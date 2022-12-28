@@ -1,0 +1,135 @@
+.info {
+  margin-top: 106px;
+  &-inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 86px 0;
+    background: #f7fafe;
+    border-radius: 16px;
+    span {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 20px solid $c100;
+      right: 64%;
+      top: 0;
+      transform: rotate(45deg);
+      animation: element1 5s ease-out 0s 1 normal forwards;
+      @keyframes element1 {
+        0% {
+          opacity: 0;
+          transform: translateY(-250px) rotate(-200deg);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0) rotate(45deg);
+        }
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid $c100;
+      right: -1%;
+      bottom: 3%;
+      transform: rotate(45deg);
+      animation: element2 5s ease-out 0s 1 normal forwards;
+      @keyframes element2 {
+        0% {
+          opacity: 0;
+          transform: translateX(-250px) rotate(360deg);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0) rotate(45deg);
+        }
+      }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 25px solid $c100;
+      left: -1%;
+      bottom: 20%;
+      transform: rotate(135deg);
+      animation: element3 5s ease-out 0s 1 normal forwards;
+      @keyframes element3 {
+        0% {
+          opacity: 0;
+          transform: translateY(-250px) rotate(-200deg);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0) rotate(135deg);
+        }
+      }
+    }
+    h2 {
+      width: 800px;
+      font-size: 64px;
+      line-height: 74px;
+      @extend %pop-sb;
+      color: $c200;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      border: none;
+      background: $c100;
+      border-radius: 8px;
+      padding: 12px 16px;
+      @extend %dtrans;
+      cursor: pointer;
+      p {
+        margin-left: 9px;
+        color: $default;
+        font-size: 14px;
+        line-height: 20px;
+        @extend %pop-r;
+      }
+      &:hover {
+        opacity: 0.8;
+        @extend %htrans;
+        @extend %border-ef;
+      }
+    }
+  }
+}
+
+// 800
+@media screen and (max-width: 800px) {
+}
+
+// 768
+@media screen and (max-width: 768px) {
+}
+
+// 600
+@media screen and (max-width: 600px) {
+}
+
+// 480
+@media screen and (max-width: 480px) {
+}
+
+// 320
+@media screen and (max-width: 320px) {
+}

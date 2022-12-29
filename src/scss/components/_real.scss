@@ -201,20 +201,472 @@
 }
 // 800
 @media screen and (max-width: 800px) {
+  .real {
+    margin-top: 100px;
+    &-inner {
+      flex-direction: column;
+    }
+    &-text {
+      width: 700px;
+      &__title {
+        width: 700px;
+        text-align: center;
+        h2 {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        &::after {
+          width: 80px;
+          height: 100px;
+          background-size: contain;
+          top: -25%;
+          left: 9%;
+        }
+      }
+      &__card {
+        width: 700px;
+        margin-left: 0;
+        margin: 24px 0;
+        ul {
+          li {
+            width: 700px;
+            padding-bottom: 50px;
+            h2 {
+              margin-bottom: 2px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 20px;
+              width: 500px;
+              &::after {
+                left: -5%;
+              }
+            }
+            span {
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+    &-card {
+      margin-left: 0px;
+      ul {
+        display: flex;
+        gap: 30px;
+        li {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          h2 {
+            margin-bottom: 2px;
+          }
+          span {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+      &__jpnl {
+        width: 300px;
+      }
+      &__leeve {
+        width: 300px;
+      }
+    }
+    &-brand {
+      margin-top: 80px;
+      flex-direction: column;
+      align-items: center;
+      &__text {
+        width: 700px;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      &__img {
+        ul {
+          margin: 0 auto;
+          gap: 35px;
+        }
+      }
+    }
+  }
 }
 
 // 768
 @media screen and (max-width: 768px) {
+  .real {
+    margin-top: 100px;
+    &-inner {
+      flex-direction: column;
+    }
+    &-text {
+      width: 700px;
+      &__title {
+        width: 700px;
+        text-align: center;
+        h2 {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        &::after {
+          width: 80px;
+          height: 100px;
+          background-size: contain;
+          top: -25%;
+          left: 9%;
+        }
+      }
+      &__card {
+        width: 700px;
+        margin-left: 0;
+        margin: 24px 0;
+        ul {
+          li {
+            width: 700px;
+            padding-bottom: 50px;
+            h2 {
+              margin-bottom: 2px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 20px;
+              width: 500px;
+              &::after {
+                left: -5%;
+              }
+            }
+            span {
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+    &-card {
+      margin-left: 0px;
+      ul {
+        display: flex;
+        gap: 30px;
+        li {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          h2 {
+            margin-bottom: 2px;
+          }
+          span {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+      &__jpnl {
+        width: 300px;
+      }
+      &__leeve {
+        width: 300px;
+      }
+    }
+    &-brand {
+      margin-top: 80px;
+      flex-direction: column;
+      align-items: center;
+      &__text {
+        width: 700px;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+      &__img {
+        ul {
+          margin: 0 auto;
+          gap: 35px;
+        }
+      }
+    }
+  }
 }
 
 // 600
 @media screen and (max-width: 600px) {
+  .real {
+    margin-top: 100px;
+    &-inner {
+      flex-direction: column;
+    }
+    &-text {
+      width: 550px;
+      &__title {
+        width: 550px;
+        text-align: center;
+        h2 {
+          font-size: 45px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        &::after {
+          width: 80px;
+          height: 100px;
+          background-size: contain;
+          top: -23%;
+          left: -2%;
+        }
+      }
+      &__card {
+        width: 290px;
+        margin-left: 0;
+        margin: 24px 0;
+        ul {
+          li {
+            width: 550px;
+            padding-bottom: 50px;
+            h2 {
+              margin-bottom: 2px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 20px;
+              width: 500px;
+              &::after {
+                left: -5%;
+              }
+            }
+            span {
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+    &-card {
+      margin-left: 0px;
+      ul {
+        display: flex;
+        gap: 30px;
+        li {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          h2 {
+            margin-bottom: 2px;
+          }
+          span {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+      &__jpnl {
+        width: 290px;
+      }
+      &__leeve {
+        width: 240px;
+      }
+    }
+    &-brand {
+      margin-top: 80px;
+      flex-direction: column;
+      &__text {
+        width: 290px;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
 }
 
 // 480
 @media screen and (max-width: 480px) {
+  .real {
+    margin-top: 100px;
+    &-inner {
+      flex-direction: column;
+    }
+    &-text {
+      width: 450px;
+      &__title {
+        width: 450px;
+        text-align: center;
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+        &::after {
+          width: 60px;
+          height: 80px;
+          background-size: contain;
+          top: -27%;
+          left: 7%;
+        }
+      }
+      &__card {
+        width: 450px;
+        margin-left: 0;
+        margin: 24px 0;
+        ul {
+          li {
+            width: 450px;
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+    &-card {
+      margin-left: 0;
+      ul {
+        li {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+      &__jpnl {
+        width: 450px;
+      }
+      &__leeve {
+        width: 450px;
+      }
+    }
+    &-brand {
+      margin-top: 80px;
+      flex-direction: column;
+      &__text {
+        width: 450px;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
 }
 
 // 320
 @media screen and (max-width: 320px) {
+  .real {
+    margin-top: 100px;
+    &-inner {
+      flex-direction: column;
+    }
+    &-text {
+      width: 290px;
+      &__title {
+        width: 290px;
+        text-align: center;
+        h2 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+        &::after {
+          width: 60px;
+          height: 80px;
+          background-size: contain;
+          top: -27%;
+          left: -4%;
+        }
+      }
+      &__card {
+        width: 290px;
+        margin-left: 0;
+        margin: 24px 0;
+        ul {
+          li {
+            width: 290px;
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+    &-card {
+      margin-left: 0;
+      ul {
+        li {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+      &__jpnl {
+        width: 290px;
+      }
+      &__leeve {
+        width: 290px;
+      }
+    }
+    &-brand {
+      margin-top: 80px;
+      flex-direction: column;
+      &__text {
+        width: 290px;
+        margin-bottom: 30px;
+        h2 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
 }

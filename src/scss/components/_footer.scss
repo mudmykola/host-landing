@@ -1,0 +1,64 @@
+.footer {
+  background-color: $c100;
+  &-inner {
+    display: flex;
+    align-items: center;
+    padding: 64px 0 104px;
+    &__logo {
+      width: 296px;
+      margin-right: 120px;
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        color: #e6e6e6;
+        @extend %int-r;
+        margin-top: 16px;
+      }
+    }
+    &__menu {
+      ul {
+        display: flex;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          h2 {
+            font-size: 16px;
+            line-height: 20px;
+            @extend %int-eb;
+            color: $default;
+          }
+          a {
+            font-size: 14px;
+            line-height: 20px;
+            @extend %int-r;
+            color: $default;
+            margin-top: 24px;
+            @extend %dtrans;
+            &:hover {
+              color: $c200;
+              @extend %htrans;
+            }
+          }
+        }
+        li + li {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+  &-copy {
+    padding-bottom: 80px;
+
+    h2 {
+      font-size: 16px;
+      line-height: 20px;
+      color: $default;
+      @extend %int-r;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

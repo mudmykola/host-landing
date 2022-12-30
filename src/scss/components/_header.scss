@@ -59,6 +59,15 @@
 
         @extend %pop-r;
       }
+      a {
+        padding: 12px;
+        border-radius: 8px;
+
+        font-size: 14px;
+        line-height: 20px;
+
+        @extend %pop-r;
+      }
     }
     &__img {
       position: relative;

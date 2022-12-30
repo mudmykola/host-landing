@@ -2,6 +2,7 @@
   @include('menu.html')
   <div class="container">
     <div class="header-cont">
+      @include('create-account.html')
       <div class="header-cont__text">
         <div class="header-cont__tab">
           <button class="header-btn__tab" type="button">Hosting</button>
@@ -45,7 +46,9 @@
         </div>
 
         <div class="header-cont__link">
-          <button class="header-btn__create">Create an Account</button>
+          <button class="header-btn__create" id="createBtn">
+            Create an Account
+          </button>
           <a href="#pricing" class="header-btn__plan">Choose your plan</a>
         </div>
       </div>

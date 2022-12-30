@@ -1,7 +1,8 @@
 .header {
   &-cont {
+    position: relative;
     display: flex;
-    align-items: center0 0;
+    // align-items: center;
     &__text {
       width: 606px;
       margin-right: 55px;
@@ -369,6 +370,10 @@
       &__link {
         width: 280px;
         gap: 15px;
+        a {
+          font-size: 12px;
+          line-height: 17px;
+        }
 
         button {
           padding: 8px;

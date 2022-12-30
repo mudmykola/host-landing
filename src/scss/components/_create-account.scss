@@ -1,0 +1,101 @@
+.createa {
+  display: none;
+  position: absolute;
+  background: $c500;
+  z-index: 1;
+  right: 30%;
+  @extend %border-ef;
+  border-radius: 15px;
+  animation: close 2s ease 0s 1 normal forwards;
+  @keyframes close {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0);
+      transform-origin: 50% 50%;
+    }
+
+    15% {
+      transform: translateY(-30px) rotate(-6deg);
+    }
+
+    30% {
+      transform: translateY(15px) rotate(6deg);
+    }
+
+    45% {
+      transform: translateY(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+      transform: translateY(9px) rotate(2.4deg);
+    }
+
+    75% {
+      transform: translateY(-6px) rotate(-1.2deg);
+    }
+  }
+  &-inner {
+    padding: 30px;
+    h2 {
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 15px;
+      color: $c200;
+    }
+    label {
+      form {
+        display: flex;
+        flex-direction: column;
+        input {
+          outline: none;
+          padding: 8px 0 8px 8px;
+        }
+        input + input {
+          margin-top: 10px;
+        }
+      }
+    }
+    button {
+      cursor: pointer;
+      position: absolute;
+      background: transparent;
+      border: none;
+      top: 5%;
+      right: 5%;
+      @extend %int-eb;
+      color: $c600;
+    }
+    &__btn {
+      width: 40%;
+      height: 45px;
+      @extend %int-r;
+      background: $c100;
+      border-radius: 8px;
+      border: none;
+      color: $default;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+}
+
+// 800
+@media screen and (max-width: 800px) {
+}
+
+// 768
+@media screen and (max-width: 768px) {
+}
+
+// 600
+@media screen and (max-width: 600px) {
+}
+
+// 480
+@media screen and (max-width: 480px) {
+}
+
+// 320
+@media screen and (max-width: 320px) {
+}

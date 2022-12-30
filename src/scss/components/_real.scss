@@ -545,12 +545,14 @@
         width: 450px;
         margin-left: 0;
         margin: 24px 0;
+
         ul {
           li {
             width: 450px;
             p {
               font-size: 14px;
               line-height: 20px;
+              width: 400px;
             }
           }
         }
@@ -558,7 +560,9 @@
     }
     &-card {
       margin-left: 0;
+
       ul {
+        flex-direction: column;
         li {
           p {
             font-size: 14px;
@@ -628,8 +632,12 @@
           li {
             width: 290px;
             p {
-              font-size: 14px;
-              line-height: 20px;
+              font-size: 12px;
+              line-height: 18px;
+              width: 250px;
+              &::after {
+                left: -8%;
+              }
             }
           }
         }
@@ -637,11 +645,13 @@
     }
     &-card {
       margin-left: 0;
+
       ul {
+        flex-direction: column;
         li {
           p {
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 12px;
+            line-height: 18px;
           }
         }
       }
